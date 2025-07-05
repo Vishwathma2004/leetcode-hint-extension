@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeetCode Hint Fetcher</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="popup-container">
+      <h1>LeetCode Hint Fetcher</h1>
+
+      <div id="problem-name"></div>
+      <p>Click the Fetch hints to get hint about the problem</p>
+      <select id="language-select">
+      <option value="auto">Auto-detect</option>
+      <option value="java">Java</option>
+      <option value="python">Python</option>
+      <option value="cpp">C++</option>
+      <option value="javascript">JavaScript</option>
+    </select>
+
+      <textarea
+        id="code-input"
+        placeholder="Paste your solution code here..."
+        rows="10"
+        style="width: 100%; margin-bottom: 10px; padding: 8px; border-radius: 8px; border: 1px solid #ccc; resize: vertical;"
+      ></textarea>
+
+      <div id="hint-container"></div>
+      <div id="spinner" class="spinner hidden"></div>
+      <button id="fetch-hints">Fetch Hints</button>
+    </div>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

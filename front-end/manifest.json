@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Hint Fetcher",
+  "version": "1.0",
+  "description": "Fetch hints for LeetCode problems",
+  "permissions": ["activeTab", "storage", "scripting","tabs"],
+  "action": {
+  "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "http://localhost:3000/*",
+    "https://leetcode-hint-extension.onrender.com/*",
+    "https://www.geeksforgeeks.org/problems/*"
+    
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

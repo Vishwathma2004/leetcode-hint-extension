@@ -1,0 +1,9 @@
+# Ignore environment config
+.env
+
+# Ignore dependencies
+node_modules/
+
+# Ignore logs and system files
+*.log
+.DS_Store

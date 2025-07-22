@@ -66,7 +66,7 @@ Inside `hint-backend/.env`, include your Gemini API key like:
 
 GEMINI_API_KEY=your_google_generative_ai_key
 
-⚠️ Do not commit this file to GitHub — it should be listed in `.gitignore`.
+
 
 ## 📦 Dependencies
 
